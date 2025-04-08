@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors());
-const port = 3000;
+const port = 8000;
 
 const Product = require("./models/Product");
 const SignUp = require("./models/SignUp");
@@ -57,7 +57,7 @@ app.post("/signin", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`App listening on port ${port}`);
 });
 
 mongoose
